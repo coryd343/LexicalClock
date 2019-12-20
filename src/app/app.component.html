@@ -1,21 +1,40 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div id="container" fxLayout="row" fxLayoutAlign="center center">
+  <div id="clock" fxLayout="column" fxLayoutAlign="center">
+    <div fxLayout="row" fxLayoutAlign="center">
+      <div id="itIs" class="label active">It is</div>
+    </div>
+    <div id="minute-row" fxLayout="row" fxLayoutAlign="space-around">
+      <div id="fiveM" class="label">Five</div>
+      <div id="tenM" class="label">Ten</div>
+      <div id="quarterM" class="label">Quarter</div>
+      <div id="twentyM" class="label">Twenty</div>
+      <div id="halfM" class="label">Half</div>
+    </div>
+    <div id="direction-row" fxLayout="row" fxLayoutAlign="space-around">
+      <div id="past" class="label">Past</div>
+      <div id="till" class="label">Till</div>
+    </div>
+    <div id="hour-rows" fxLayout="column">
+      <div id="hour-row1" fxLayout="row" fxLayoutAlign="space-around">
+        <div id="h1" class="label">One</div>
+        <div id="h2" class="label">Two</div>
+        <div id="h3" class="label">Three</div>
+        <div id="h4" class="label">Four</div>
+        <div id="h5" class="label">Five</div>
+        <div id="h6" class="label">Six</div>
+      </div>
+      <div id="hour-row2" fxLayout="row" fxLayoutAlign="space-around">
+        <div id="h7" class="label">Seven</div>
+        <div id="h8" class="label">Eight</div>
+        <div id="h9" class="label">Nine</div>
+        <div id="h10" class="label">Ten</div>
+        <div id="h11" class="label">Eleven</div>
+        <div id="h12" class="label">Twelve</div>
+      </div>
+    </div>
+    <div id="am-pm" fxLayout="row" fxLayoutAlign="space-around">
+      <div id="am" class="label">AM</div>
+      <div id="pm" class="label">PM</div>
+    </div>
+  </div>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
-
-<router-outlet></router-outlet>
